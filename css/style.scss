@@ -1,0 +1,27 @@
+@import 'colors';
+
+.mdl-layout__header {
+  @include gradient(#fdfdfd, #dddcdb, #fdfdfd 0%, #fdfdfd 50%, #fdfdfd 51%, #dddcdb 100%)
+}
+
+.gameplan-header {
+  width: 100%;
+  padding: 0px;
+
+  &-logo {
+    background-color: $dgrey;
+    margin: 0px;
+    text-align: center;
+      vertical-align: middle;
+    & img {
+
+    }
+  }
+}
+.gameplan-subheader {
+  background-color: $red;
+}
+
+.gameplan-footer {
+  background-color: $dgrey;
+}
