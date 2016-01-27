@@ -1,7 +1,7 @@
 @import 'colors';
 
-.mdl-layout__header {
-  @include gradient(#fdfdfd, #dddcdb, #fdfdfd 0%, #fdfdfd 50%, #fdfdfd 51%, #dddcdb 100%)
+.mdl-layout__header, .mdl-layout__header-row {
+  @include gradient(#fdfdfd, #dddcdb, #fdfdfd 0%, #fdfdfd 50%, #fdfdfd 51%, #dddcdb 100%);
 }
 
 .gameplan-header {
@@ -20,8 +20,20 @@
 }
 .gameplan-subheader {
   background-color: $red;
+  color: $white;
+  & h2 {
+    font-size: 24px;
+    line-height: 24px;
+    margin: 0px;
+    padding: 0px;
+  }
 }
 
 .gameplan-footer {
   background-color: $dgrey;
+}
+
+.gameplan-faux-dropdown {
+  text-transform: uppercase;
+  border-right: 1px solid #333;
 }

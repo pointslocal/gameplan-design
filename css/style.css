@@ -1,4 +1,4 @@
-.mdl-layout__header {
+.mdl-layout__header, .mdl-layout__header-row {
   background: #start;
   background: -moz-linear-gradient(top, #fdfdfd 0%, #fdfdfd 50%, #fdfdfd 51%, #dddcdb 100%);
   background: -webkit-linear-gradient(top, #fdfdfd 0%, #fdfdfd 50%, #fdfdfd 51%, #dddcdb 100%);
@@ -16,9 +16,19 @@
     vertical-align: middle; }
 
 .gameplan-subheader {
-  background-color: #fc0202; }
+  background-color: #fc0202;
+  color: #fdfdfd; }
+  .gameplan-subheader h2 {
+    font-size: 24px;
+    line-height: 24px;
+    margin: 0px;
+    padding: 0px; }
 
 .gameplan-footer {
   background-color: #312e2d; }
+
+.gameplan-faux-dropdown {
+  text-transform: uppercase;
+  border-right: 1px solid #333; }
 
 /*# sourceMappingURL=style.css.map */
