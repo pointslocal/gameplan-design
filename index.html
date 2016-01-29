@@ -26,7 +26,7 @@
   <body>
     <div class="mdl-layout mdl-js-layout">
 
-      <div class="android-header mdl-layout__header">
+      <div class="android-header mdl-layout__header ">
         <div class="mdl-layout__header-row">
             <div class="mdl-grid gameplan-header mdl-cell--stretch">
                 <div class="mdl-cell mdl-cell--3-col mdl-cell--middle mdl-cell--stretch gameplan-header-logo">
@@ -150,7 +150,27 @@
               </div>
 
               </div>
-              <div class="mdl-cell mdl-cell--10-col">stuff</div>
+              <div class="mdl-cell mdl-cell--10-col">
+                  <div class="mdl-grid">
+                      <div class="mdl-cell mdl-cell--3-col">
+                        <div class="mdl-grid mdl-grid--no-spacing" style="background-color:#fff;">
+                          <div class="mdl-cell mdl-cell--12-col gameplan-padding gameplan-header">Final</div>
+                          <div class="mdl-cell mdl-cell--12-col">
+                            <div class="mdl-grid mdl-grid--no-spacing">
+                            <div class="mdl-cell mdl-cell--10-col gameplan-row gameplan-padding">MRSH</div>
+                            <div class="mdl-cell mdl-cell--2-col gameplan-row gameplan-padding">75</div>
+                            </div>
+                          </div>
+                          <div class="mdl-cell mdl-cell--12-col">
+                            <div class="mdl-grid mdl-grid--no-spacing">
+                            <div class="mdl-cell mdl-cell--10-col gameplan-row gameplan-padding">NG</div>
+                            <div class="mdl-cell mdl-cell--2-col gameplan-row gameplan-padding">59</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+              </div>
             </div>
         </div>
 
@@ -193,43 +213,77 @@
 
           <div class="mdl-cell mdl-cell--8-col">
             <div class="gameplan-boxscore">
-                <h1>Milwaukee Washington at Fort Atkinson</h1>
+                <h1>Fort Atkinson 51, Milwaukee Washington 28 </h1>
+                <p>
+                  Sophomore Sarah Pfeifer scored 13 points to lead the host Blackhawks (8-8) in a rout over the Purgolders (3-8). Junior Morgan Dunkleberger added 12 for Fort Atkinson. The Blackhawks went 15-of-29 from the free throw line.
+                </p>
+                <div class="mdl-grid mdl-grid--no-spacing">
+                  <div class="mdl-cell mdl-cell--8-col gameplan-header">
+                    <div class="mdl-grid"><div class="mdl-cell mdl-cell--12-col">Team</div></div>
+                  </div>
+                  <div class="mdl-cell mdl-cell--4-col gameplan-header">
+                      <div class="mdl-grid">
+                        <div class="mdl-cell mdl-cell--4-col">1</div>
+                        <div class="mdl-cell mdl-cell--4-col">2</div>
+                        <div class="mdl-cell mdl-cell--4-col">F</div>
+                      </div>
+                  </div>
+
+                  <div class="mdl-cell mdl-cell--8-col gameplan-row">
+                    <div class="mdl-grid"><div class="mdl-cell mdl-cell--12-col"><a href="#">Milwaukee Washington</a></div></div>
+                  </div>
+                  <div class="mdl-cell mdl-cell--4-col gameplan-row">
+                      <div class="mdl-grid">
+                        <div class="mdl-cell mdl-cell--4-col">11</div>
+                        <div class="mdl-cell mdl-cell--4-col">17</div>
+                        <div class="mdl-cell mdl-cell--4-col">28</div>
+                      </div>
+                  </div>
+
+                  <div class="mdl-cell mdl-cell--8-col gameplan-row">
+                    <div class="mdl-grid"><div class="mdl-cell mdl-cell--12-col"><img src="http://preps.madison.com/image?method=image.icrop&context=stats.image&id=76&w=30&h=30" /> <a href="#">Fort Atkinson</a></div></div>
+                  </div>
+                  <div class="mdl-cell mdl-cell--4-col gameplan-row">
+                      <div class="mdl-grid">
+                        <div class="mdl-cell mdl-cell--4-col">25</div>
+                        <div class="mdl-cell mdl-cell--4-col">26</div>
+                        <div class="mdl-cell mdl-cell--4-col">51</div>
+                      </div>
+                  </div>
+
+
+                </div>
             </div>
           </div>
           <div class="mdl-cell mdl-cell--4-col">
-            <div style="width: 300px;height:300px;background-color: #eee;"></div>
+            <div class="ad square"></div>
           </div>
 
         </div>
 
         <!-- standings -->
           <div id="gameplan-standings-template" style="display:none;">
-            <div class="mdl-grid ">
-              <div class="mdl-cell mdl-cell--6-col">Team</div>
-              <div class="mdl-cell mdl-cell--1-col">W</div>
-              <div class="mdl-cell mdl-cell--1-col">L</div>
-              <div class="mdl-cell mdl-cell--1-col">PCT</div>
-              <div class="mdl-cell mdl-cell--1-col">W</div>
-              <div class="mdl-cell mdl-cell--1-col">L</div>
-              <div class="mdl-cell mdl-cell--1-col">PCT</div>
+            <div class="mdl-grid mdl-grid--no-spacing">
+              <div class="mdl-cell mdl-cell--6-col gameplan-header "><div class="mdl-grid"><div class="mdl-cell mdl-cell--12-col">Team</div></div></div>
+              <div class="mdl-cell mdl-cell--1-col gameplan-header gameplan-row-centered"><div class="mdl-grid"><div class="mdl-cell mdl-cell--12-col">W</div></div></div>
+              <div class="mdl-cell mdl-cell--1-col gameplan-header gameplan-row-centered"><div class="mdl-grid"><div class="mdl-cell mdl-cell--12-col">L</div></div></div>
+              <div class="mdl-cell mdl-cell--1-col gameplan-header gameplan-row-centered"><div class="mdl-grid"><div class="mdl-cell mdl-cell--12-col">PCT</div></div></div>
+              <div class="mdl-cell mdl-cell--1-col gameplan-header gameplan-row-centered"><div class="mdl-grid"><div class="mdl-cell mdl-cell--12-col">W</div></div></div>
+              <div class="mdl-cell mdl-cell--1-col gameplan-header gameplan-row-centered"><div class="mdl-grid"><div class="mdl-cell mdl-cell--12-col">L</div></div></div>
+              <div class="mdl-cell mdl-cell--1-col gameplan-header gameplan-row-centered"><div class="mdl-grid"><div class="mdl-cell mdl-cell--12-col">PCT</div></div></div>
             </div>
             {{#items}}
-              <div class="mdl-grid">
-                <div class="mdl-cell mdl-cell--6-col">
-                    <div class="mdl-grid">
-                      <div class="mdl-cell mdl-cell--4-col">{{#has:image}}<img src="http://preps.madison.com/image?method=image.icrop&context=stats.image&id={{id}}&w=40&h=40" />{{/has:image}}</div>
-                      <div class="mdl-cell mdl-cell--8-col">
-                        <a href="http://preps.madison.com/schools/madison-memorial"><h3>{{name}}</h3></a>
-                        <h4>{{nickname}}</h4>
-                      </div>
-                    </div>
+              <div class="mdl-grid mdl-grid--no-spacing">
+                <div class="mdl-cell mdl-cell--6-col gameplan-row">
+                    <div class="mdl-grid"><div class="mdl-cell mdl-cell--12-col">{{#has:image}}<img src="http://preps.madison.com/image?method=image.icrop&context=stats.image&id={{id}}&w=30&h=30" /> {{/has:image}}<a>{{name}}{{nickname}}</a></div></div>
+
                 </div>
-                <div class="mdl-cell mdl-cell--1-col"><div class="mdl-grid"><div class="mdl-cell--12-col">{{wins}}</div></div></div>
-                <div class="mdl-cell mdl-cell--1-col">{{losses}}</div>
-                <div class="mdl-cell mdl-cell--1-col">{{pct}}</div>
-                <div class="mdl-cell mdl-cell--1-col">{{conference-wins}}</div>
-                <div class="mdl-cell mdl-cell--1-col">{{conference-losses}}</div>
-                <div class="mdl-cell mdl-cell--1-col">{{conference-pct}}</div>
+                <div class="mdl-cell mdl-cell--1-col gameplan-row gameplan-row-centered"><div class="mdl-grid"><div class="mdl-cell mdl-cell--12-col">{{wins}}</div></div></div>
+                <div class="mdl-cell mdl-cell--1-col gameplan-row gameplan-row-centered"><div class="mdl-grid"><div class="mdl-cell mdl-cell--12-col">{{losses}}</div></div></div>
+                <div class="mdl-cell mdl-cell--1-col gameplan-row gameplan-row-centered"><div class="mdl-grid"><div class="mdl-cell mdl-cell--12-col">{{pct}}</div></div></div>
+                <div class="mdl-cell mdl-cell--1-col gameplan-row gameplan-row-centered"><div class="mdl-grid"><div class="mdl-cell mdl-cell--12-col">{{conference-wins}}</div></div></div>
+                <div class="mdl-cell mdl-cell--1-col gameplan-row gameplan-row-centered"><div class="mdl-grid"><div class="mdl-cell mdl-cell--12-col">{{conference-losses}}</div></div></div>
+                <div class="mdl-cell mdl-cell--1-col gameplan-row gameplan-row-centered"><div class="mdl-grid"><div class="mdl-cell mdl-cell--12-col">{{conference-pct}}</div></div></div>
               </div>
             {{/items}}
           </div>
@@ -239,7 +293,8 @@
           <div class="mdl-cell mdl-cell--8-col">
             <div class="mdl-grid mdl-grid--no-spacing">
                 <div class="mdl-cell mdl-cell--6-col"><h2>Standings</h2></div>
-                <div class="mdl-cell mdl-cell--6-col">Sport</div>
+                <div class="mdl-cell mdl-cell--3-col">Sport</div>
+                <div class="mdl-cell mdl-cell--3-col">Conference</div>
             </div>
             <div class="gameplan-widget" id="gameplan-standings"></div>
           </div>

@@ -5,6 +5,12 @@
   background-color: #eee;
 }
 
+p {
+    font-size: 18px;
+    line-height: 27px;
+    color: #444;
+  }
+
 a {
   color: #444;
   text-decoration: none;
@@ -83,6 +89,7 @@ h3 {
     line-height: 24px;
     margin: 0px;
     padding: 0px;
+    color: $white;
   }
 }
 
@@ -126,11 +133,6 @@ h3 {
   & img {
     max-width: 100%;
   }
-  & p {
-    font-size: 18px;
-    line-height: 27px;
-    color: #444;
-  }
   &-main {
     padding-bottom: 20px;
   }
@@ -140,8 +142,25 @@ h3 {
 }
 
 
+.gameplan-header {
+  @include gradient(#909195, #323b44, #909195 0%,#323b44 55%,#323b44 86%);
+  color: $white;
+}
 
+.gameplan-row {
+  border-bottom: 1px solid #eee;
+  font-size: 16px;
+}
+.gameplan-row-centered {
+  text-align: center;
+}
 
+.mdl-padded {
+  padding: 8px;
+}
+.gameplan-padding {
+  padding: 4px;
+}
 
 
 @media only screen  and (min-width : 1224px) {
