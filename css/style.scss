@@ -141,6 +141,13 @@ h3 {
   }
 }
 
+.gameplan-dropdown {
+  background-color: $white;
+
+}
+.gameplan-dropdown span {
+  padding: 8px;
+}
 
 .gameplan-header {
   @include gradient(#909195, #323b44, #909195 0%,#323b44 55%,#323b44 86%);

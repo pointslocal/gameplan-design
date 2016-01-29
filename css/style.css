@@ -102,6 +102,12 @@ h3 {
 .gameplan-story-padded {
   padding: 10px; }
 
+.gameplan-dropdown {
+  background-color: #fdfdfd; }
+
+.gameplan-dropdown span {
+  padding: 8px; }
+
 .gameplan-header {
   background: #start;
   background: -moz-linear-gradient(top, #909195 0%, #323b44 55%, #323b44 86%);
