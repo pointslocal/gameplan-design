@@ -6,7 +6,7 @@
     <meta name="description" content="Introducing Lollipop, a sweet new take on Android.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Gameplan</title>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <!-- Page styles -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -18,11 +18,15 @@
       <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900|Merriweather:400,300,700,900' rel='stylesheet' type='text/css'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.0/mustache.min.js"></script>
+<script src="http://preps.madison.com/services/widgets/gameplan.js"></script>
+<script src="http://preps.madison.com/services/widgets/gameplan-templates.js"></script>
   </head>
   <body>
     <div class="mdl-layout mdl-js-layout">
 
-      <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
+      <div class="android-header mdl-layout__header">
         <div class="mdl-layout__header-row">
             <div class="mdl-grid gameplan-header mdl-cell--stretch">
                 <div class="mdl-cell mdl-cell--3-col mdl-cell--middle mdl-cell--stretch gameplan-header-logo">
@@ -42,36 +46,21 @@
                 </div>
                 <div class="mdl-cell mdl-cell--1-col">
                   <div class="mdl-grid">
-                    <div class="mdl-cell mdl-cell--12-col">
-                    P
+                    <div class="mdl-cell mdl-cell--12-col" style="margin: 0px;">
+                      <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
+                        <i class="material-icons">more_vert</i>
+                      </button>
+                      <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
+                        <li class="mdl-menu__item">Your Teams</li>
+
+                      </ul>
                     </div>
                   </div>
                 </div>
             </div>
 
         </div>
-        <div class="gameplan-subheader">
-          <div class="mdl-grid">
-            <div class="mdl-cell mdl-cell--3-col">
-              <h2><i class="material-icons">bookmark_border</i> BASKETBALL</h2>
-            </div>
-            <div class="mdl-cell mdl-cell--1-col" >
-              <div class="mdl-grid"><div class="mdl-cell--12-col">Stories</div></div>
-            </div>
-            <div class="mdl-cell mdl-cell--1-col">
-              <div class="mdl-grid"><div class="mdl-cell--12-col">Scores</div></div>
-            </div>
-            <div class="mdl-cell mdl-cell--1-col">
-              <div class="mdl-grid"><div class="mdl-cell--12-col">Standings</div></div>
-            </div>
-            <div class="mdl-cell mdl-cell--1-col">
-              <div class="mdl-grid"><div class="mdl-cell--12-col">Stats</div></div>
-            </div>
-            <div class="mdl-cell mdl-cell--1-col">
-              <div class="mdl-grid"><div class="mdl-cell--12-col">Teams</div></div>
-            </div>
-          </div>
-        </div>
+
       </div>
 
       <div class="android-drawer mdl-layout__drawer">
@@ -107,6 +96,29 @@
 
       <div class="android-content mdl-layout__content">
         <a name="top"></a>
+
+        <div class="gameplan-subheader">
+          <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--3-col">
+              <h2><i class="material-icons">bookmark_border</i> BASKETBALL</h2>
+            </div>
+            <div class="mdl-cell mdl-cell--1-col" >
+              <div class="mdl-grid"><div class="mdl-cell--12-col">Stories</div></div>
+            </div>
+            <div class="mdl-cell mdl-cell--1-col">
+              <div class="mdl-grid"><div class="mdl-cell--12-col">Scores</div></div>
+            </div>
+            <div class="mdl-cell mdl-cell--1-col">
+              <div class="mdl-grid"><div class="mdl-cell--12-col">Standings</div></div>
+            </div>
+            <div class="mdl-cell mdl-cell--1-col">
+              <div class="mdl-grid"><div class="mdl-cell--12-col">Stats</div></div>
+            </div>
+            <div class="mdl-cell mdl-cell--1-col">
+              <div class="mdl-grid"><div class="mdl-cell--12-col">Teams</div></div>
+            </div>
+          </div>
+        </div>
 
         <div class="gameplan-widget-container">
             <div class="gameplan-widget mdl-grid mdl-grid--no-spacing">
@@ -144,22 +156,45 @@
 
 
         <div>Ad spots</div>
-        <div class="mdl-grid gameplan-grid" style="min-height: 400px;">
+        <div class="mdl-grid gameplan-grid gameplan-section">
           <div class="mdl-cell mdl-cell--8-col">
-            content
+            <div class="gameplan-story gameplan-story-main">
+              <img src="http://preps.madison.com/image?method=image.icrop&context=story.image&w=780&h=400&id=118" />
+              <h2>Photos: Wisconsin natives who have played or coached in Super Bowl</h2>
+              <p>The NFL is celebrating Super Bowl 50 by honoring every player and head coach who has participated in a Super Bowl. Here are photos of every Wisconsin native recognized in the league's golden anniversary.</p>
+            </div>
+
+            <div class="mdl-grid mdl-grid--no-spacing">
+              <div class="mdl-cell mdl-cell--6-col">
+                <div class="gameplan-story gameplan-story-padded">
+                  <img src="http://preps.madison.com/image?method=image.icrop&context=story.image&w=400&h=200&id=117" />
+                  <h3><a href="#">Prep volleyball: Verona's Victoria Brisack, Waterloo's Madeline Mosher are among nation's top seniors</a></h3>
+                  <p>Several state players and UW recruits are candidates for national player of the year honors</p>
+                </div>
+              </div>
+              <div class="mdl-cell mdl-cell--6-col">
+                <div class="gameplan-story gameplan-story-padded">
+                  <img src="http://preps.madison.com/image?method=image.icrop&context=story.image&w=400&h=200&id=115" />
+                  <h3><a href="#">Prep volleyball: Verona's Victoria Brisack, Waterloo's Madeline Mosher are among nation's top seniors</a></h3>
+                  <p>Several state players and UW recruits are candidates for national player of the year honors</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="mdl-cell mdl-cell--4-col">
-            <div style="width: 300px;height:300px;background-color: #eee;"></div>
+          <div class="mdl-cell mdl-cell--4-col" style="text-align:center;">
+            <div class="ad skyscraper"></div>
           </div>
 
         </div>
 
 
         <!-- box score -->
-        <div class="mdl-grid gameplan-grid" style="min-height: 400px;">
+        <div class="mdl-grid gameplan-grid gameplan-section" style="min-height: 400px;">
 
           <div class="mdl-cell mdl-cell--8-col">
-            box score
+            <div class="gameplan-boxscore">
+                <h1>Milwaukee Washington at Fort Atkinson</h1>
+            </div>
           </div>
           <div class="mdl-cell mdl-cell--4-col">
             <div style="width: 300px;height:300px;background-color: #eee;"></div>
@@ -168,10 +203,45 @@
         </div>
 
         <!-- standings -->
+          <div id="gameplan-standings-template" style="display:none;">
+            <div class="mdl-grid ">
+              <div class="mdl-cell mdl-cell--6-col">Team</div>
+              <div class="mdl-cell mdl-cell--1-col">W</div>
+              <div class="mdl-cell mdl-cell--1-col">L</div>
+              <div class="mdl-cell mdl-cell--1-col">PCT</div>
+              <div class="mdl-cell mdl-cell--1-col">W</div>
+              <div class="mdl-cell mdl-cell--1-col">L</div>
+              <div class="mdl-cell mdl-cell--1-col">PCT</div>
+            </div>
+            {{#items}}
+              <div class="mdl-grid">
+                <div class="mdl-cell mdl-cell--6-col">
+                    <div class="mdl-grid">
+                      <div class="mdl-cell mdl-cell--4-col">{{#has:image}}<img src="http://preps.madison.com/image?method=image.icrop&context=stats.image&id={{id}}&w=40&h=40" />{{/has:image}}</div>
+                      <div class="mdl-cell mdl-cell--8-col">
+                        <a href="http://preps.madison.com/schools/madison-memorial"><h3>{{name}}</h3></a>
+                        <h4>{{nickname}}</h4>
+                      </div>
+                    </div>
+                </div>
+                <div class="mdl-cell mdl-cell--1-col"><div class="mdl-grid"><div class="mdl-cell--12-col">{{wins}}</div></div></div>
+                <div class="mdl-cell mdl-cell--1-col">{{losses}}</div>
+                <div class="mdl-cell mdl-cell--1-col">{{pct}}</div>
+                <div class="mdl-cell mdl-cell--1-col">{{conference-wins}}</div>
+                <div class="mdl-cell mdl-cell--1-col">{{conference-losses}}</div>
+                <div class="mdl-cell mdl-cell--1-col">{{conference-pct}}</div>
+              </div>
+            {{/items}}
+          </div>
+
         <div class="mdl-grid gameplan-grid" style="min-height: 800px;">
 
           <div class="mdl-cell mdl-cell--8-col">
-            box score
+            <div class="mdl-grid mdl-grid--no-spacing">
+                <div class="mdl-cell mdl-cell--6-col"><h2>Standings</h2></div>
+                <div class="mdl-cell mdl-cell--6-col">Sport</div>
+            </div>
+            <div class="gameplan-widget" id="gameplan-standings"></div>
           </div>
           <div class="mdl-cell mdl-cell--4-col">
             <div style="width: 300px;height:300px;background-color: #eee;"></div>
@@ -243,7 +313,36 @@
       </div>
     </div>
 
-    <script src="../../material.min.js"></script>
+<script>
+$(document).ready(function() {
+
+  var ih = $('#widget-header img').outerHeight();
+  var vh = $(window).height();
+  var fh = (ih < vh ? ih : vh);
+
+  $('#widget-header').height(fh+'px');
+
+var GameplanWidget = new Gameplan({'site': 'madison', 'engine':'mustache' });
+
+  /*  Results Widget */
+  GameplanWidget.results({ 'sport':'girls-basketball','count': 25, 'date': 'today-recent', 'dateFormat':'M j'}, '#gameplan-scoreboard', GameplanSchedulesTemplate);
+
+  /*  Schedule Widget */
+  GameplanWidget.results({ 'sport':'boys-basketball','count': 25, 'date': 'next', 'dateFormat':'M j'}, '#gameplan-schedule', GameplanSchedulesTemplate);
+
+  /*  Standings Widget */
+  var StandingsWidget = new Gameplan({'site':'madison','engine':'mustache'});
+  StandingsWidget.standings({ 'division':'badger-south','season':'2015-2016-boys-basketball', 'dateFormat':'M j'}, '#gameplan-standings', $('#gameplan-standings-template').html());
+
+  var PlayerWidget = new Gameplan({'site':'madison','engine':'mustache'});
+  PlayerWidget.players({ 'id':'7526' }, '#gameplan-playercard', $('#gameplan-player-template').html() );
+  PlayerWidget.players({ 'id':'7528' }, '#gameplan-playercard2', $('#gameplan-player-template').html() );
+
+  var TeamWidget = new Gameplan({'site':'madison','engine':'mustache'});
+  TeamWidget.teams({ 'school':'janesville-parker' }, '#gameplan-teamcard', $('#gameplan-team-template').html() );
+
+});
+</script>
 
 
   </body>
