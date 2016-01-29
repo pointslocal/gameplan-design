@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="material.min.css">
-
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 
 
     <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.grey-pink.min.css" />
@@ -108,15 +108,50 @@
       <div class="android-content mdl-layout__content">
         <a name="top"></a>
 
-        <div>Scoreboard</div>
+        <div class="gameplan-widget-container">
+            <div class="gameplan-widget mdl-grid mdl-grid--no-spacing">
+              <div class="mdl-cell mdl-cell--2-col">
+              <div class="mdl-grid ">
+                <div class="mdl-cell mdl-cell--2-col mdl-cell--middle mdl-cell--stretch gameplan-widget-navigation">
+                  <div class="mdl-grid mdl-grid--no-spacing">
+                    <div class="mdl-cell--12-col">
+                     <i class="ion-chevron-left"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="mdl-cell mdl-cell--10-col mdl-cell--stretch">
+                    <div class="mdl-grid mdl-grid--no-spacing">
+                      <div class="mdl-cell mdl-cell--12-col">
+                        <div class="gameplan-faux-dropdown mdl-grid mdl-grid--no-spacing">
+                            <div class="mdl-cell mdl-cell--10-col">Basketball</div>
+                            <div class="mdl-cell mdl-cell--2-col"><i class="ion-chevron-down"></i></div>
+                        </div>
+                      </div>
+                      <div class="mdl-cell mdl-cell--12-col">
+                        <div class="gameplan-faux-dropdown mdl-grid mdl-grid--no-spacing">
+                            <div class="mdl-cell mdl-cell--10-col">Jan 29 2016</div>
+                            <div class="mdl-cell mdl-cell--2-col"><i class="ion-chevron-down"></i></div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+
+              </div>
+              <div class="mdl-cell mdl-cell--10-col">stuff</div>
+            </div>
+        </div>
+
+
         <div>Ad spots</div>
-        <div class="mdl-grid" style="height: 800px;">
-          <div class="mdl-cell mdl-cell--3-col">
-            Story Links
-          </div>
-          <div class="mdl-cell mdl-cell-9-col">
+        <div class="mdl-grid gameplan-grid" style="height: 800px;">
+          <div class="mdl-cell mdl-cell--9-col">
             content
           </div>
+          <div class="mdl-cell mdl-cell--3-col">
+            <div style="width: 300px;height:300px;background-color: #eee;"></div>
+          </div>
+
         </div>
 
 

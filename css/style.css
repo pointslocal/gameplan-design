@@ -24,11 +24,25 @@
     margin: 0px;
     padding: 0px; }
 
+.gameplan-widget-container {
+  background-color: #eee;
+  padding: 10px; }
+
+.gameplan-widget-navigation {
+  background-color: #fc0202;
+  color: #fdfdfd;
+  text-align: center; }
+
 .gameplan-footer {
   background-color: #312e2d; }
 
 .gameplan-faux-dropdown {
-  text-transform: uppercase;
-  border-right: 1px solid #333; }
+  text-transform: uppercase; }
+  .gameplan-faux-dropdown-bordered {
+    border: 1px solid #312e2d; }
+
+.gameplan-grid {
+  width: 1100px;
+  margin: auto; }
 
 /*# sourceMappingURL=style.css.map */

@@ -29,11 +29,33 @@
   }
 }
 
+.gameplan-widget-container {
+  background-color: $lgrey;
+  padding: 10px;
+}
+
+.gameplan-widget {
+
+
+  &-navigation {
+    background-color: $red;
+    color: $white;
+    text-align: center;
+  }
+}
+
 .gameplan-footer {
   background-color: $dgrey;
 }
 
 .gameplan-faux-dropdown {
   text-transform: uppercase;
-  border-right: 1px solid #333;
+  &-bordered {
+    border: 1px solid $dgrey;
+  }
+}
+
+.gameplan-grid {
+  width: 1100px;
+  margin: auto;
 }
