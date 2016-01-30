@@ -141,6 +141,41 @@ h3 {
   }
 }
 
+.faux-dropdown {
+  padding: 8px;
+  border: 1px solid #eee;
+  border-radius: 2px;
+  margin-right: 2px;
+  margin-left: 2px;
+  position: relative;
+  &-contents {
+    position: absolute;
+    top: calc(100% + 1px);
+    left: -1px;
+    width: 100%;
+
+    margin: 0px;
+    padding: 0px;
+
+    & li {
+      list-style: none;
+      padding: 8px;
+    background-color: rgba(255,255,255,.95);
+      width: calc(100% - 16px);
+      border-bottom: 1px solid #eee;
+      border-left: 1px solid #eee;
+      border-right: 1px solid #eee;
+
+      &:hover {
+        background-color: rgba(255,255,255,1);
+      }
+    }
+  }
+}
+.faux-dropdown:hover {
+  background-color: #fcfcfc;
+  cursor: pointer;
+}
 .gameplan-dropdown {
   background-color: $white;
 
