@@ -149,6 +149,7 @@ h3 {
   margin-left: 2px;
   position: relative;
   &-contents {
+    display: none;
     position: absolute;
     top: calc(100% + 1px);
     left: -1px;
@@ -156,6 +157,10 @@ h3 {
 
     margin: 0px;
     padding: 0px;
+
+    &.active {
+      display: block;
+    }
 
     & li {
       list-style: none;

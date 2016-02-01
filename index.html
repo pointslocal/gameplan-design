@@ -6,7 +6,7 @@
     <meta name="description" content="Introducing Lollipop, a sweet new take on Android.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Gameplan</title>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <!-- Page styles -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -345,7 +345,7 @@
             <div class="mdl-grid mdl-grid--no-spacing">
                 <div class="mdl-cell mdl-cell--6-col"><h2>Standings</h2></div>
                 <div class="mdl-cell mdl-cell--3-col"><div class="faux-dropdown">Sport<span style="float:right;"><i class="ion-chevron-down"></i></span></div></div>
-                <div class="mdl-cell mdl-cell--3-col"><div class="faux-dropdown"><ul class="faux-dropdown-contents"><li>Item</li></ul>Conference<span style="float:right;"><i class="ion-chevron-down"></i></span></div></div>
+                <div class="mdl-cell mdl-cell--3-col"><div class="faux-dropdown" onclick="$(this).find('.faux-dropdown-contents').toggle();"><ul class="faux-dropdown-contents"><li>Item</li></ul>Conference<span style="float:right;"><i class="ion-chevron-down"></i></span></div></div>
             </div>
             <div class="gameplan-widget" id="gameplan-standings"></div>
           </div>

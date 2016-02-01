@@ -110,12 +110,15 @@ h3 {
   margin-left: 2px;
   position: relative; }
   .faux-dropdown-contents {
+    display: none;
     position: absolute;
     top: calc(100% + 1px);
     left: -1px;
     width: 100%;
     margin: 0px;
     padding: 0px; }
+    .faux-dropdown-contents.active {
+      display: block; }
     .faux-dropdown-contents li {
       list-style: none;
       padding: 8px;
