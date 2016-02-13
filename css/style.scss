@@ -38,14 +38,14 @@ a {
 
 *,h1,h2,h3,h4 {
   font-family: Lato,arial,helvetica;
+
 }
 
 h1,h2,h3,h4 {
   color: #444;
   margin: 0px;
   padding: 0px;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin: 0px;
   font-weight: 800;
 
   & a {
