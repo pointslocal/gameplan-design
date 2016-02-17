@@ -2,7 +2,7 @@
   background-color: #eee; }
 
 p {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 27px;
   color: #444; }
 
@@ -31,15 +31,17 @@ h1, h2, h3, h4 {
   color: #444;
   margin: 0px;
   padding: 0px;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin: 0px;
   font-weight: 800; }
   h1 a, h2 a, h3 a, h4 a {
     font-weight: 800; }
 
 h1 {
   font-size: 34px;
-  line-height: 40px; }
+  line-height: 40px;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 5px; }
 
 h2 {
   font-size: 30px;
@@ -95,6 +97,24 @@ h3 {
   text-transform: uppercase; }
   .gameplan-faux-dropdown-bordered {
     border: 1px solid #312e2d; }
+
+.gameplan-boxscore-header {
+  margin-bottom: 10px;
+  border-bottom: 2px solid #eee; }
+  .gameplan-boxscore-header-score {
+    font-size: 35px;
+    font-weight: 800; }
+  .gameplan-boxscore-header-team-home_away, .gameplan-boxscore-header-school-name, .gameplan-boxscore-header-team-name {
+    color: #999; }
+  .gameplan-boxscore-header-school-name {
+    font-size: 16px; }
+  .gameplan-boxscore-header-team-name {
+    font-size: 24px; }
+  .gameplan-boxscore-header-team-home_away {
+    font-size: 10px;
+    text-transform: uppercase; }
+  .gameplan-boxscore-header-box, .gameplan-boxscore-header-box .mdl-cell {
+    font-size: 10px; }
 
 .gameplan-grid {
   margin: auto; }

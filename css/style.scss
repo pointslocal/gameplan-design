@@ -6,7 +6,7 @@
 }
 
 p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 27px;
     color: #444;
   }
@@ -56,6 +56,9 @@ h1,h2,h3,h4 {
 h1 {
   font-size: 34px;
   line-height: 40px;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 h2 {
@@ -125,6 +128,34 @@ h3 {
   text-transform: uppercase;
   &-bordered {
     border: 1px solid $dgrey;
+  }
+}
+
+.gameplan-boxscore {
+  &-header {
+    margin-bottom: 10px;
+    border-bottom: 2px solid $lgrey;
+    &-score {
+      font-size: 35px;
+      font-weight: 800;
+    }
+    &-team-home_away, &-school-name, &-team-name {
+      color: $grey;
+    }
+    &-school-name {
+      font-size: 16px;
+    }
+    &-team-name {
+      font-size: 24px;
+    }
+    &-team-home_away {
+      font-size: 10px;
+      text-transform: uppercase;
+
+    }
+    &-box, &-box .mdl-cell {
+      font-size: 10px;
+    }
   }
 }
 
