@@ -1,0 +1,100 @@
+        <!-- box score -->
+        <div class="mdl-grid gameplan-grid gameplan-section" style="min-height: 400px;">
+
+          <div class="mdl-cell mdl-cell--8-col">
+            <div class="gameplan-boxscore">
+
+                <div class="gameplan-boxscore-header mdl-grid mdl-grid--no-spacing">
+                  <div class="mdl-cell mdl-cell--4-col mdl-cell--middle">
+                    <div class="mdl-grid">
+                      <div class="mdl-cell mdl-cell--6-col mdl-cell--middle">
+                        <div class="gameplan-boxscore-header-team-home_away">AWAY</div>
+                        <div class="gameplan-boxscore-header-school-name"><a href="<[@@host]>/schools/{{away-team-rewrite}}/{{stats_sport_rewrite}}">{{away-team-name}}</a></div>
+                        <div class="gameplan-boxscore-header-team-name">{{away-team-nickname}}</div>
+                      </div>
+                      <div class="mdl-cell mdl-cell--3-col mdl-typography--text-center mdl-cell--middle">
+                        <img src="http://preps.madison.com/image?method=image.icrop&context=stats.image&id={{event_away_stats_entity_id}}&w=70&h=70" style="max-width:100%;margin:auto;" />
+                      </div>
+                      <div class="mdl-cell mdl-cell--3-col mdl-cell--middle mdl-typography--text-center">
+                        <div class="gameplan-boxscore-header-score">{{event_away_stats_score}}</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mdl-cell mdl-cell--4-col mdl-cell--middle mdl-typography--text-center">
+                    <div class="mdl-grid">
+                      <div class="mdl-cell mdl-cell--12-col mdl-cell--typography-center">
+                        <span class="gameplan-boxscore-header-date">{{game-date}}</span>
+                        <!-- start box -->
+
+                          <div class="mdl-grid mdl-grid--no-spacing gameplan-boxscore-header-box">
+                            <div class="mdl-cell mdl-cell--4-col">
+                              <div class="mdl-grid mdl-grid--no-spacing"><div class="mdl-cell mdl-cell--12-col">Team</div></div>
+                            </div>
+                            <div class="mdl-cell mdl-cell--8-col">
+                                <div class="mdl-grid mdl-grid--no-spacing">
+                                  {{#header_periods}}
+                                    <div class="mdl-cell">{{name}}</div>
+                                  {{/header_periods}}
+                                  <div class="mdl-cell">F</div>
+                                </div>
+                            </div>
+
+                            <div class="mdl-cell mdl-cell--4-col">
+                              <div class="mdl-grid mdl-grid--no-spacing"><div class="mdl-cell mdl-cell--12-col"><a href="#">{{away-team-abbreviation}}</a></div></div>
+                            </div>
+                            <div class="mdl-cell mdl-cell--8-col">
+                                <div class="mdl-grid mdl-grid--no-spacing">
+                                  <div class="mdl-cell mdl-cell--4-col">11</div>
+                                  <div class="mdl-cell mdl-cell--4-col">17</div>
+                                  <div class="mdl-cell mdl-cell--4-col">28</div>
+                                </div>
+                            </div>
+
+                            <div class="mdl-cell mdl-cell--4-col">
+                              <div class="mdl-grid mdl-grid--no-spacing"><div class="mdl-cell mdl-cell--12-col"> <a href="#">{{home-team-abbreviation}}</a></div></div>
+                            </div>
+                            <div class="mdl-cell mdl-cell--8-col">
+                                <div class="mdl-grid mdl-grid--no-spacing">
+                                  <div class="mdl-cell mdl-cell--4-col">25</div>
+                                  <div class="mdl-cell mdl-cell--4-col">26</div>
+                                  <div class="mdl-cell mdl-cell--4-col">51</div>
+                                </div>
+                            </div>
+
+
+                          </div>
+                        <!-- end box -->
+                      </div>
+
+
+                    </div>
+                  </div>
+                  <div class="mdl-cell mdl-cell--4-col">
+                    <div class="mdl-grid">
+                      <div class="mdl-cell mdl-cell--3-col mdl-cell--middle mdl-typography--text-center">
+                        <div class="gameplan-boxscore-header-score">{{event_home_stats_score}}</div>
+                      </div>
+                      <div class="mdl-cell mdl-cell--3-col mdl-typography--text-center mdl-cell--middle">
+                        <img src="http://preps.madison.com/image?method=image.icrop&context=stats.image&id={{event_home_stats_entity_id}}&w=70&h=70" style="max-width:100%;margin:auto;" />
+                      </div>
+                      <div class="mdl-cell mdl-cell--6-col mdl-cell--middle">
+                        <div class="gameplan-boxscore-header-team-home_away">Home</div>
+                        <div class="gameplan-boxscore-header-school-name"><a href="<[@@host]>/schools/{{home-team-rewrite}}/{{stats_sport_rewrite}}">{{home-team-name}}</a></div>
+                        <div class="gameplan-boxscore-header-team-name">{{home-team-nickname}}</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <h1>{{title}}</h1>
+                <p>
+                  {{&description}}
+                </p>
+
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--4-col">
+            <div class="ad square"></div>
+          </div>
+
+        </div>
+
