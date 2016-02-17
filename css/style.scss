@@ -153,6 +153,10 @@ h3 {
       text-transform: uppercase;
 
     }
+    &-date {
+      text-transform: uppercase;
+      color: $grey;
+    }
     &-box, &-box .mdl-cell {
       font-size: 10px;
     }
